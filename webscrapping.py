@@ -63,7 +63,7 @@ try:                           #try block to handle error and exception
     cur = conn.cursor()
     cur.execute('SELECT Ticker, OpenPrice, PrevClosePrice, Volume FROM StocksTable')
     cur.close()  
-except:
+except:   # to handle exceptions
     print("Server is down temporarily, please try again later.")
 
 
